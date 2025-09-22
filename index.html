@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<!-- Declaramos HTML5 -->
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <!-- Soporta acentos -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Responsive -->
+    <title>Portfolio - Juan Cruz Góngora</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- HEADER: barra de navegación -->
+    <header>
+      <nav class="nav-header">
+        <ul class="list-nav">
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#sobre-mi">Sobre mí</a></li>
+          <li><a href="#proyectos">Proyectos</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="main-container">
+      <!-- Sección inicio -->
+      <section id="inicio">
+        <h1 class="nombre">Juan Cruz Gongora</h1>
+        <p>Desarrollador Back-End</p>
+      </section>
+
+      <!-- Sobre mí -->
+      <section id="sobre-mi" class="sobre-mi">
+        <h2 class="sobre-mi-h2">Sobre mí</h2>
+        <div class="sobre-mi-container">
+          <img src="images/code.png" alt="Foto de Juan Cruz Góngora" />
+          <div>
+            <p>
+              Hola soy Juan Cruz Góngora, un desarrollador back-end con
+              experiencia en la creación de aplicaciones web robustas y
+              escalables. Me especializo en tecnologías como Node.js, Express,
+              PHP, Laravel y bases de datos SQL y NoSQL. Me apasiona resolver
+              problemas complejos y optimizar el rendimiento de las aplicaciones
+              para ofrecer la mejor experiencia a los usuarios.
+            </p>
+            <button class="btn btn-contactame">
+              <a href="#contacto">Contactame</a>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Proyectos -->
+      <section id="proyectos" class="proyectos">
+        <div class="proyectos-container">
+          <div class="proyectos-fixed-container">
+            <div class="proyecto-textos">
+              <h2>Proyectos</h2>
+              <p>
+                A lo largo de mi experiencia he trabajado en diversos proyectos
+                que abarcan diferentes tecnologías y enfoques. Aquí hay algunos
+                de ellos:
+              </p>
+            </div>
+          </div>
+          <div class="proyectos-articles">
+            <article>
+              
+             <div class="card-encabezado-proyectos">
+              <h3>Obrapp</h3>
+              <button class="btn btn-card-proyectos"><a href="https://www.obrapps.com/"> Ver Página</a></button>
+             </div>
+             <div class="card-cuerpo">
+              <img src="images/code.png" alt="Obrapp" />
+              <p>
+                Aplicacion para control y gestión de obras/visitas tecnicas
+                (CRM).
+              </p>
+              <p>
+                Mi Participacion: Creación de un sistema de archivos, modelado
+                de base de datos, implementacion de ci/cd, logica del negocio
+              </p>
+              </div>
+              <div class="card-footer">
+                <p>Tecnologías</p>
+                <ul class="tecnologias-list">
+                    <li>PHP</li>
+                    <li>Laravel</li>
+                    <li>MySQL</li>
+                    <li>JavaScript</li>
+                    <li>HTML/CSS</li>
+                  </ul>
+              <button class="btn btn-card-proyectos"><a href="https://www.obrapps.com/"> Ver Página</a></button>
+              </div>
+            </article>
+            <article>
+              
+             <div class="card-encabezado-proyectos">
+              <h3>Obrapp</h3>
+              <button class="btn btn-card-proyectos"><a href="https://www.obrapps.com/"> Ver Página</a></button>
+             </div>
+             <div class="card-cuerpo">
+              <img src="images/code.png" alt="Obrapp" />
+              <p>
+                Aplicacion para control y gestión de obras/visitas tecnicas
+                (CRM).
+              </p>
+              <p>
+                Mi Participacion: Creación de un sistema de archivos, modelado
+                de base de datos, implementacion de ci/cd, logica del negocio
+              </p>
+              </div>
+              <div class="card-footer">
+                <p>Tecnologías</p>
+                <ul class="tecnologias-list">
+                    <li>PHP</li>
+                    <li>Laravel</li>
+                    <li>MySQL</li>
+                    <li>JavaScript</li>
+                    <li>HTML/CSS</li>
+                  </ul>
+              <button class="btn btn-card-proyectos"><a href="https://www.obrapps.com/"> Ver Página</a></button>
+              </div>
+            </article>
+                        <article>
+              
+             <div class="card-encabezado-proyectos">
+              <h3>Obrapp</h3>
+              <button class="btn btn-card-proyectos"><a href="https://www.obrapps.com/"> Ver Página</a></button>
+             </div>
+             <div class="card-cuerpo">
+              <img src="images/code.png" alt="Obrapp" />
+              <p>
+                Aplicacion para control y gestión de obras/visitas tecnicas
+                (CRM).
+              </p>
+              <p>
+                Mi Participacion: Creación de un sistema de archivos, modelado
+                de base de datos, implementacion de ci/cd, logica del negocio
+              </p>
+              </div>
+              <div class="card-footer">
+                <p>Tecnologías</p>
+                <ul class="tecnologias-list">
+                    <li>PHP</li>
+                    <li>Laravel</li>
+                    <li>MySQL</li>
+                    <li>JavaScript</li>
+                    <li>HTML/CSS</li>
+                  </ul>
+              <button class="btn btn-card-proyectos"><a href="https://www.obrapps.com/"> Ver Página</a></button>
+              </div>
+            </article>
+    
+          </div>
+        </div>
+      </section>
+
+      <!-- Contacto -->
+      <section id="contacto" class="contacto">
+        <h2>Contacto</h2>
+        <div class="form-container">
+        <form>
+          <label for="nombre">Nombre</label>
+          <input id="nombre" type="text" required />
+          <label for="email">Email</label>
+          <input id="email" type="email" required />
+          <label for="mensaje">Mensaje</label>
+          <textarea id="mensaje" required></textarea>
+          <button type="submit" class="btn btn-contactame">Enviar</button>
+        </form>
+        </div>
+      </section>
+
+      <!-- Referencias -->
+      <section id="referencias" class="referencias">
+        <h2>Referencias</h2>
+        <div class="referencias-container">
+          <article class="referencia">
+            <blockquote>“Excelente trabajo”</blockquote>
+            <p class="referencia-autor">- María Pérez, Gerente de Proyectos</p>
+          </article>
+          <article class="referencia">
+            <blockquote>“Responsable y proactivo, siempre aporta soluciones.”</blockquote>
+            <p class="referencia-autor">- Luis Gómez, CTO en TechSol</p>
+          </article>
+          <article class="referencia">
+            <blockquote>“Gran capacidad para trabajar en equipo y cumplir objetivos.”</blockquote>
+            <p class="referencia-autor">- Ana Torres, Líder de Desarrollo</p>
+          </article>
+        </div>
+      </section>
+
+      <!-- Información adicional -->
+      <!-- <aside>
+        <h2>Información extra</h2>
+        <p>
+          Aquí podría ir publicidad, enlaces relacionados o noticias breves.
+        </p>
+      </aside> -->
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <p>© 2025 Juan Cruz Góngora</p>
+    </footer>
+  </body>
+</html>
