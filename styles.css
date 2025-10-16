@@ -2,69 +2,69 @@
 html {
   box-sizing: border-box;
 }
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
 /* Definición de variables  */
 :root {
-
-  --color-background-primario: #FFFFFF;
+  --color-background-primario: #ffffff;
   --color-background-secundario: #f4effc;
 
-  --color-background-card:#301e4e;
-  --color-encabezado-card:#ffffff;
-  --color-card-text:#f4f0fc;
-  --color-card-tag:#4c346b;
-  --color-card-tag-text:#FFFFFF;
-  --color-text-resaltado:#ff6e6c;
+  --color-background-card: #301e4e;
+  --color-encabezado-card: #ffffff;
+  --color-card-text: #f4f0fc;
+  --color-card-tag: #4c346b;
+  --color-card-tag-text: #ffffff;
+  --color-text-resaltado: #ff6e6c;
 
   --color-button: #ff6e6c;
   --color-button-text: #1f1235;
 
   --color-encabezado: #1f1235;
-  --color-encabezado-secundario:#1b1425;
+  --color-encabezado-secundario: #1b1425;
 
-  --color-texto:#1b1325;
+  --color-texto: #1b1325;
 }
 
 img {
-    max-width: 100%;
-    height: auto;
-    display: block;
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
 /* Estilos generales */
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: var(--color-background-primario);
-    
-    margin: 0;
-    padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--color-background-primario);
 
+  margin: 0;
+  padding: 0;
 }
 a {
-    text-decoration: none;
-    color: inherit;
+  text-decoration: none;
+  color: inherit;
 }
-h1{
-    color: var(--color-text-resaltado);
-    font-size: 2.5rem;
+h1 {
+  color: var(--color-text-resaltado);
+  font-size: 2.5rem;
 }
 
-h2{
-    color: var(--color-encabezado);
-    font-size: 2rem;
+h2 {
+  color: var(--color-encabezado);
+  font-size: 2rem;
 }
 header {
-    background-color: inherit;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    padding: .5rem;
-    position: sticky;
-    z-index: 1000;
-    top: 0;
+  background-color: inherit;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 0.5rem;
+  position: sticky;
+  z-index: 1000;
+  top: 0;
 }
 section {
-    padding: 1rem 5%;
-    margin: 5rem 0;
+  padding: 1rem 5%;
+  margin: 5rem 0;
 }
 .list-nav {
   display: flex;
@@ -83,83 +83,79 @@ section {
 /* sobre mi seccion */
 /* media query para tablets o algo asi no se vamos a tirar numeros al azar ajhskdjalsd */
 @media (max-width: 768px) {
-  .sobre-mi-container{
+  .sobre-mi-container {
     flex-direction: column;
     align-items: center;
   }
 }
-.sobre-mi{
-    margin-top: 5rem;
-    background-color: var(--color-background-secundario);
-
+.sobre-mi {
+  margin-top: 5rem;
+  background-color: var(--color-background-secundario);
 }
-.sobre-mi p{
-    font-size: 1.2rem;
-    color: var(--color-texto);
-    line-height: 1.6;
+.sobre-mi p {
+  font-size: 1.2rem;
+  color: var(--color-texto);
+  line-height: 1.6;
 }
-.sobre-mi-container{
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    margin-top: 20px;
+.sobre-mi-container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-top: 20px;
 }
-.sobre-mi-container img{
-    width: 40rem;
-    border-radius: 10px;
+.sobre-mi-container img {
+  width: 40rem;
+  border-radius: 10px;
 }
-.sobre-mi-h2{
-    text-align: center;
+.sobre-mi-h2 {
+  text-align: center;
 }
 .btn {
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 1rem;
-    font-weight: bold;
-    transition-duration: 100ms;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  transition-duration: 100ms;
 }
 .btn-contactame {
-    background-color: var(--color-button);
-    color: var(--color-card-tag-text);
+  background-color: var(--color-button);
+  color: var(--color-card-tag-text);
 }
-.btn-card-proyectos{
-    background-color: var(--color-button);
-    color: var(--color-card-tag-text);
+.btn-card-proyectos {
+  background-color: var(--color-button);
+  color: var(--color-card-tag-text);
 }
 .btn:hover {
-/* Sombra */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  /* Sombra */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 /* proyectos */
 /* media query para tablets ???  alguien deberia ponerle un standar a esto*/
 @media (max-width: 768px) {
-  .proyectos-container{
+  .proyectos-container {
     flex-direction: column;
     align-items: center;
   }
-  .proyecto-textos{
+  .proyecto-textos {
     position: static;
     width: 100%;
     text-align: center;
   }
-   
 }
 
-.proyectos-container{
-    display: flex;
-    gap: 20px;
-    justify-content: center;
-    
-    
+.proyectos-container {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
 }
-.proyectos-fixed-container{
+.proyectos-fixed-container {
   position: relative;
   display: block;
 }
-.proyecto-textos{
+.proyecto-textos {
   position: sticky;
   float: left;
   top: 0;
@@ -170,153 +166,184 @@ section {
   box-sizing: border-box;
 }
 
-.proyectos-articles article{
-    background-color: var(--color-background-card);
-    color: var(--color-card-text);
+.proyectos-articles article {
+  background-color: var(--color-background-card);
+  color: var(--color-card-text);
+  border-radius: 10px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  &:first-of-type {
+    margin-top: 10rem;
+  }
+  & img {
+    /* centrar la imagen */
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 40rem;
     border-radius: 10px;
-    padding: 2rem;
-    margin-bottom: 2rem;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    &:first-of-type{
-        margin-top: 10rem;
-    }
-    & img{
-        /* centrar la imagen */
-        display: block;
-        margin: 0 auto;
-        width: 100%;
-        max-width: 40rem;
-        border-radius: 10px;
-        margin-bottom: 10px;
-    }
-    & p{
-        font-size: 1.2rem;
-        line-height: 1.6;
-    }
-}
-.card-encabezado-proyectos{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     margin-bottom: 10px;
-    padding: 1rem;
-    & h3{ /* hACERLO MAS GRANDE */
-        color: var(--color-encabezado-card);
-        margin: 0;
-        font-size: 3rem;
-    }
+  }
+  & p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+  }
+}
+.card-encabezado-proyectos {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  padding: 1rem;
+  & h3 {
+    /* hACERLO MAS GRANDE */
+    color: var(--color-encabezado-card);
+    margin: 0;
+    font-size: 3rem;
+  }
 }
 .card-footer {
-    
-    font-size: 1rem;
-    font-weight: 700;
-    margin-top: 10px;
-    & button{
-        display: none;
-    }
+  font-size: 1rem;
+  font-weight: 700;
+  margin-top: 10px;
+  & button {
+    display: none;
+  }
 }
-
 
 /* ahora para algo mas chico pq  se contrapone  el boton el el h2 */
 @media (max-width: 480px) {
-  .card-encabezado-proyectos button{
+  .card-encabezado-proyectos button {
     display: none;
   }
-  .card-footer button{
+  .card-footer button {
     display: block;
   }
 }
-  .tecnologias-list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    & li {
-   
+.tecnologias-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  & li {
     background-color: #4c336b;
     border-radius: 3px;
-    margin-bottom: .6rem;
-    margin-right: .6rem;
+    margin-bottom: 0.6rem;
+    margin-right: 0.6rem;
     padding: 5px 10px;
     font-size: 14px;
     font-weight: 700;
     display: inline-block;
-    }
   }
+}
 
-  input, textarea {
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.contacto {
+  background-color: var(--color-background-card);
+  padding: 20px;
+  margin: 0;
+}
+.contacto h2 {
+  text-align: center;
+  color: var(--color-card-text);
+  margin-bottom: 20px;
+}
+.contacto button {
+  display: block;
+  margin: 0 auto;
+}
+.form-container {
+  max-width: 600px;
+  margin: 0 auto;
+  & label {
+    font-weight: bold;
+    color: var(--color-card-text);
+  }
+}
+.referencias {
+  padding: 20px;
+  margin: 0;
+}
+.referencias-container {
+  display: flex;
+  gap: 10px;
+}
+.referencia {
+  width: 100%;
+  min-width: 20rem;
+  height: auto;
+  background-color: var(--color-background-secundario);
+  padding: 10px;
+  border-radius: 5px;
+}
+.errormsj {
+  margin-top: 1rem;
+  padding: 10px;
+  background-color: #ffe6e6;
+  border: 1px solid red;
+  border-radius: 5px;
+  text-align: center;
+  color: red;
+  font-weight: bold;
+  display: none;
+}
+
+/* EN  TABLETS LAS REFERENCIAS TIENE 2 FILAS NAMAS  */
+@media (max-width: 768px) {
+  .referencias-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+footer {
+  background-color: var(--color-background-card);
+  color: var(--color-card-text);
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+  width: 100%;
+}
+
+/* LOS BOTONES TOMA EL ANCHO BOMPLETO EN TELEFONOS */
+@media (max-width: 480px) {
+  .btn {
     width: 100%;
-    padding: 10px;
-    margin: 10px 0;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 1rem;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   }
-  .contacto{
-    background-color: var(--color-background-card);
-    padding: 20px;
-    margin: 0;
-  }
-  .contacto h2{
-    text-align: center;
-    color: var(--color-card-text);
-    margin-bottom: 20px;
-  }
-  .contacto button{
-    display: block;
-    margin: 0 auto;}
-  .form-container{
-    max-width: 600px;
-    margin: 0 auto;
-    & label{
-        font-weight: bold;
-        color: var(--color-card-text);
-    }
-  }
-  .referencias{
-    padding: 20px;
-    margin: 0;
-  }
-  .referencias-container{
-    display: flex;
-    gap: 10px;
-  }
-  .referencia{
-      width: 100%;
-      min-width: 20rem;
-      height: auto;
-      background-color: var(--color-background-secundario);
-      padding: 10px;
-      border-radius: 5px;
-  }
+}
 
-  /* EN  TABLETS LAS REFERENCIAS TIENE 2 FILAS NAMAS  */
-  @media (max-width: 768px) {
-    .referencias-container{
-      flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: center;
-    }
-  }
+.referencia.oculta {
+  visibility: hidden;
+}
 
-  footer {
-
-
-    background-color: var(--color-background-card);
-    color: var(--color-card-text);
-    text-align: center;
-    padding: 1rem;
-    margin-top: 2rem;
-    width: 100%;  
-    }
-
-
-    /* LOS BOTONES TOMA EL ANCHO BOMPLETO EN TELEFONOS */
-    @media (max-width: 480px) {
-      .btn {
-        width: 100%;
-      }
-    }
+.volver-arri {
+  font-size: 3rem;
+  background-color: var(--color-button);
+  border-radius: 3px;
+  max-width: 9rem;
+  height: 3rem;
+  color: var(--color-background-primario);
+  position: fixed;
+  margin: 2rem;
+  padding-bottom: 0.5rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  right: 0;
+  bottom: 0;
+  text-align: center;
+  text-justify: center;
+  box-sizing: content-box;
+}
